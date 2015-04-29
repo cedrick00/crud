@@ -13,6 +13,6 @@
 
 
 
-Route::resource('nerds','NerdController');
+Route::resource('nerdso','NerdController');
 
 
