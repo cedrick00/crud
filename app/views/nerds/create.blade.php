@@ -32,6 +32,10 @@
         {{ Form::label('email', 'Email') }}
         {{ Form::email('email', Input::old('email'), array('class' => 'form-control')) }}
     </div>
+     <div class="form-group">
+        {{ Form::label('age', 'Age') }}
+        {{ Form::text('age', Input::old('age'), array('class' => 'form-control')) }}
+    </div>
 
     <div class="form-group">
         {{ Form::label('nerd_level', 'Nerd Level') }}

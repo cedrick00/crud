@@ -33,6 +33,11 @@
         {{ Form::email('email', null, array('class' => 'form-control')) }}
     </div>
 
+     <div class="form-group">
+        {{ Form::label('age', 'Age') }}
+        {{ Form::text('age', null, array('class' => 'form-control')) }}
+    </div>
+
     <div class="form-group">
         {{ Form::label('nerd_level', 'Nerd Level') }}
         {{ Form::select('nerd_level', array('0' => 'Select a Level', '1' => 'Sees Sunlight', '2' => 'Foosball Fanatic', '3' => 'Basement Dweller'), null, array('class' => 'form-control')) }}

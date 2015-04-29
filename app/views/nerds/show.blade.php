@@ -21,6 +21,7 @@
     <div class="jumbotron text-center">
         <h2>{{ $nerd->name }}</h2>
         <p>
+            <strong>Age:</strong> {{ $nerd->age }}<br>
             <strong>Email:</strong> {{ $nerd->email }}<br>
             <strong>Level:</strong> {{ $nerd->nerd_level }}
         </p>

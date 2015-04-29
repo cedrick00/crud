@@ -40,6 +40,7 @@ class NerdController extends \BaseController {
 		$rules = array(
 			'name'			=> 'required',
 			'email'			=> 'required|email',
+			'age'			=> 'required|numeric',
 			'nerd_level'	=> 'required|numeric'
 			);
 
@@ -53,6 +54,7 @@ class NerdController extends \BaseController {
 			$nerd = new Nerd;
 			$nerd-> name 		= Input::get('name');
 			$nerd->	email 		= Input::get('email');
+			$nerd-> age 		= Input::get('age');
 			$nerd-> nerd_level	= Input::get('nerd_level');
 			$nerd->	save();
 
@@ -103,6 +105,7 @@ class NerdController extends \BaseController {
 		$rules = array(
 			'name'			=> 'required',
 			'email'			=> 'required|email',
+			'age'			=> 'required|numeric',
 			'nerd_level'    => 'required|numeric'
 			);
 		$validator = Validator::make(Input::all(),$rules);
@@ -116,6 +119,7 @@ class NerdController extends \BaseController {
 		$nerd = Nerd::find($id);
 		$nerd->name 		= Input::get('name');
 		$nerd->email 		= Input::get('email');
+		$nerd->age 		= Input::get('age');
 		$nerd->nerd_level 	= Input::get('nerd_level');
 		$nerd->save();
 
